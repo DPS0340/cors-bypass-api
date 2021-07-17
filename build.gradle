@@ -17,9 +17,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation group: 'com.h2database', name: 'h2', version: '1.4.200'
 	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
 
 	implementation 'com.google.guava:guava:11.0.2'
+	implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+
 }
 
 test {
